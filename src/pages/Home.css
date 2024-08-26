@@ -1,0 +1,197 @@
+.main{
+  display: block;
+}
+.navbar{
+  color: white;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+
+}
+.logo p{
+  font-size:15px ;
+  font-weight: bold;
+}
+.navbar-menu {
+  display: flex;
+  gap: 100px;
+  margin-right: 300px;
+}
+
+.navbar-menu button {
+  width: 100px;
+  height: 27px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.navbar-menu button:hover {
+  background-color: rgb(36, 35, 35);
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.first {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-div {
+  width: 400px;
+  height: 45%;
+  animation: slideInLeft 3s ease-in-out forwards;
+}
+
+.image-div img {
+  width: 500px;
+  height: 500px;
+  margin-left: 170px;
+}
+
+.text-box {
+  color: white;
+  width: 500px;
+  margin-left: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin-top: 100px;
+  animation: slideInRight 3s ease-in-out forwards;
+}
+
+.about{
+  color: white;
+  margin-top: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.about h2{
+ margin-left: 45%;
+
+}
+.about p{
+  font-size: 17px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 25px;
+}
+.about-p{
+  width: 600px;
+ text-align:center;
+ margin-left: 30%;
+
+}
+.product-div{
+
+}
+
+.product-box {
+    display: flex;
+    width: 100%px;
+    column-gap: 50px;
+    padding: 30px;
+  }
+ 
+.cotton{
+  display: block;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(68, 67, 67, 0.2); /* Adjust the values as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    background-color: #000000; /* Optional: Set a background color if needed */
+    transition: box-shadow 0.3s ease-in-out;
+    border-color: rgb(96, 92, 92);
+    border-width: thick;
+
+}
+.cotton img{
+  width: 400px;
+  height: 400px;
+}
+.cotton:hover {
+  box-shadow: 0px 8px 16px rgba(128, 124, 124, 0.3); /* Enhanced shadow on hover */
+}
+
+.agarbhathi{
+  display: block;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(68, 67, 67, 0.2); /* Adjust the values as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    background-color: #000000; /* Optional: Set a background color if needed */
+    transition: box-shadow 0.3s ease-in-out;
+    border-color: rgb(96, 92, 92);
+    border-width: thick;
+
+}
+.agarbhathi img{
+  width: 400px;
+  height: 400px;
+}
+.agarbhathi:hover {
+  box-shadow: 0px 8px 16px rgba(128, 124, 124, 0.3); /* Enhanced shadow on hover */
+}
+
+.cleaning{
+  display: block;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(68, 67, 67, 0.2); /* Adjust the values as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    background-color: #000000; /* Optional: Set a background color if needed */
+    transition: box-shadow 0.3s ease-in-out;
+    border-color: rgb(96, 92, 92);
+    border-width: thick;
+
+}
+.cleaning img{
+  width: 400px;
+  height: 400px;
+}
+.cleaning:hover {
+  box-shadow: 0px 8px 16px rgba(145, 143, 143, 0.3); /* Enhanced shadow on hover */
+}
+
+.footer-div {
+  width: 100%;
+  height: 200px;
+  border-top: thick solid rgb(32, 31, 31); 
+  margin-top: 60px;
+  display: block;
+  color: white;
+}
+.logo-foot{
+ margin-left: 645px;
+ margin-top: 30px;
+ text-decoration: underline;
+ font-size: smaller;
+}
+.branch{
+  display: flex;
+  width: 500px;
+  margin-left: 550px;
+  gap: 60px;
+  font-size: smaller;
+}
+.contact{
+  color: white;
+  margin-top: 50px;
+}

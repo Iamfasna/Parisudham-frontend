@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import '../pages/User.css';
+import { useNavigate} from 'react-router-dom';
 
 const backend_url = "https://parisudhambackend.onrender.com";
 
@@ -8,6 +9,17 @@ const backend_url = "https://parisudhambackend.onrender.com";
 function User() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+
+  const navigate = useNavigate();
+
+  const handleShopClick = () => {
+    navigate('/shop');
+  };
+  
+  const handleHomeClick=()=>{
+    navigate('/')
+  }
+
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -108,9 +120,16 @@ function User() {
 
   return (
     <div>
-      <div className="title">
-        <h1>PARISUDHAM COTTON INDUSTRIES</h1>
-      </div>
+        <div className="navbar">
+        <div className="logo"> 
+           <p>PARISUDHAM COTTON INDUSTRIES</p>
+        </div>
+        <div className="navbar-menu">
+        <button onClick={handleHomeClick}>HOME</button>
+        <button onClick={handleShopClick}>SHOP</button>
+        <button>CONTACT</button>
+        </div>
+        </div>
       <div className="inside">
         <div className="left">
           <h1>SHOP</h1>

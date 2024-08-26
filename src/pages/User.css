@@ -4,22 +4,39 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #000000;
 }
 
 
-.title {
-  width: 100%;
-  height: 100px;
-  background-color: #f8f8f8;
+.navbar{
+  color: white;
   display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  padding: 10px;
   align-items: center;
-  justify-content: center;
-  border-bottom: 2px solid #ddd;
+
+}
+.logo p{
+  font-size:15px ;
+  font-weight: bold;
+}
+.navbar-menu {
+  display: flex;
+  gap: 100px;
+  margin-right: 300px;
 }
 
-.title h1 {
-  font-size: 24px;
-  color: #333;
+.navbar-menu button {
+  width: 100px;
+  height: 27px;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.navbar-menu button:hover {
+  background-color: rgb(36, 35, 35);
 }
 
 
@@ -28,7 +45,6 @@ body {
   padding: 20px;
   gap: 20px;
 }
-
 
 .left {
   flex: 2;
@@ -96,7 +112,7 @@ body {
 .right {
   flex: 1;
   padding: 20px;
-  background-color: #f7e6d4;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
