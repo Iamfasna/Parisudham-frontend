@@ -48,16 +48,16 @@ body {
 
 .left {
   flex: 2;
-  background-color: #fff;
+  background-color: #000000;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(94, 92, 92, 0.1);
 }
 
 .left h1 {
   font-size: 22px;
   margin-bottom: 20px;
-  color: #444;
+  color: #ffffff;
 }
 
 
@@ -78,12 +78,12 @@ body {
 .product h2 {
   font-size: 18px;
   margin: 10px 0;
-  color: #333;
+  color: #ffffff;
 }
 
 .product p {
   font-size: 16px;
-  color: #777;
+  color: #ffffff;
 }
 
 .product img {
@@ -171,6 +171,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  color: white;
 }
 
 .right .total {
