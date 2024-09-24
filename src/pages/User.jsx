@@ -4,7 +4,6 @@ import '../pages/User.css';
 import { useNavigate} from 'react-router-dom';
 
 const backend_url = "https://parisudhambackend.onrender.com";
-// const backend_url = "http://localhost:5000";
 
 
 

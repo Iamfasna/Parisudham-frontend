@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../pages/Home.css';
-import images from '../images/propic.png';
-
-import agarbhathi from '../images/group agar.png';
+import images from '../images/img1.jpeg';
+import agarbhathi from '../images/group agar.png'; // Updated to avoid spaces
 import cotton from '../images/cottongroup.png';
 import { useNavigate } from 'react-router-dom';
 import AOS from 'aos';
@@ -23,7 +22,7 @@ function HomePage() {
     AOS.init({
       duration: 3000,
       offset: 120,
-      once: false,
+      once: true, // Ensures animation only happens once
     });
   }, []);
 
@@ -44,20 +43,23 @@ function HomePage() {
         <div className="navbar-menu">
           <button onClick={handleHomeClick}>HOME</button>
           <button onClick={handleShopClick}>SHOP</button>
-          <button>CONTACT</button>
+          <button onClick={() => handleMenuClick('contact')}>CONTACT</button>
         </div>
       </div>
       <div className="small-screen">
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-          <div className="MENU">
-            <MdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
-            <ul className="links">
-              <li><a href="#home" onClick={() => handleMenuClick('home')}>HOME</a></li>
-              <li><a href="#shop" onClick={() => handleMenuClick('shop')}>SHOP</a></li>
-              <li><a href="#contact" onClick={() => handleMenuClick('contact')}>CONTACT</a></li>
-            </ul>
-          </div>
+       <div className="MENU">
+       <span className="material-icons overlay__close" onClick={() => setToggleMenu(false)}>
+         close
+       </span>
+       <ul className="links">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#shop">Shop</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+     </div>
+     
         )}
       </div>
 
@@ -66,28 +68,28 @@ function HomePage() {
           <h2>Pure like a Dew Drop</h2>
         </div>
         <div className="image-div">
-          <img src={images} alt="img1" />
+          <img src={images} alt="Cotton Product" />
         </div>
       </div>
 
       <div id="shop" className="product-div">
         <div className="product-box">
-          <div className="cotton" data-aos="fade-right">
-            <img src={cotton} alt="cot" />
+          <div className="product-item cotton" data-aos="fade-right">
+            <img src={cotton} alt="Cotton Product" />
             <p>
-              Illuminate your home with our premium cotton lamp wicks, crafted from 100% raw, untreated cotton for a clean and consistent burn. Whether you're using them in traditional oil lamps or for DIY crafts, these versatile wicks deliver reliable performance every time. As one of our best-selling products, they are trusted for their durability and quality. Available in three convenient pack sizes—small for personal use, medium for regular users, and large for those who want the best value—our cotton wicks are the perfect choice for anyone looking to light up their space with natural, eco-friendly materials.
+              Illuminate your home with our premium cotton lamp wicks, crafted from 100% raw, untreated cotton for a clean and consistent burn. Available in three pack sizes—small, medium, and large—our cotton wicks are trusted for their durability and quality.
             </p>
           </div>
-          <div className="agarbhathi" data-aos="fade-left">
-            <img src={agarbhathi} alt="agar" />
+          <div className="product-item agarbhathi" data-aos="fade-left">
+            <img src={agarbhathi} alt="Agarbathi Product" />
             <p>
-              Illuminate your home with our premium cotton lamp wicks, crafted from 100% raw, untreated cotton for a clean and consistent burn. Whether you're using them in traditional oil lamps or for DIY crafts, these versatile wicks deliver reliable performance every time. As one of our best-selling products, they are trusted for their durability and quality. Available in three convenient pack sizes—small for personal use, medium for regular users, and large for those who want the best value—our cotton wicks are the perfect choice for anyone looking to light up their space with natural, eco-friendly materials.
+              Our fragrant agarbathis are perfect for spiritual and everyday moments. Hand-selected and made from natural ingredients, they are available in a variety of soothing scents.
             </p>
           </div>
-          <div className="cleaning" data-aos="fade-right">
-            <img src={agarbhathi} alt="agar" />
+          <div className="product-item agarbhathi" data-aos="fade-left">
+            <img src={agarbhathi} alt="Agarbathi Product" />
             <p>
-              Illuminate your home with our premium cotton lamp wicks, crafted from 100% raw, untreated cotton for a clean and consistent burn. Whether you're using them in traditional oil lamps or for DIY crafts, these versatile wicks deliver reliable performance every time. As one of our best-selling products, they are trusted for their durability and quality. Available in three convenient pack sizes—small for personal use, medium for regular users, and large for those who want the best value—our cotton wicks are the perfect choice for anyone looking to light up their space with natural, eco-friendly materials.
+              Our fragrant agarbathis are perfect for spiritual and everyday moments. Hand-selected and made from natural ingredients, they are available in a variety of soothing scents.
             </p>
           </div>
         </div>
@@ -96,7 +98,9 @@ function HomePage() {
       <div id="contact" className="about">
         <h2>ABOUT</h2>
         <div className="about-p" data-aos="fade-up">
-          <p>Founded in 2007, we are a small yet dedicated Kerala-based startup with a passion for crafting high-quality cotton lamp wicks and fragrant agarbattis. What began as a humble endeavor to supply our meticulously crafted products to Kerala Supplycos has now blossomed into a thriving business, where our most sought-after items are accessible directly to our cherished customers online. With a focus on quality and tradition, we pride ourselves on offering products that enhance your spiritual rituals and everyday moments with the purity of cotton wicks and the soothing aroma of our hand-selected agarbattis.</p>
+          <p>
+            Founded in 2007, we are a Kerala-based startup with a passion for crafting high-quality cotton lamp wicks and fragrant agarbattis. With a focus on quality and tradition, we offer products that enhance your spiritual rituals and everyday moments.
+          </p>
         </div>
       </div>
 
@@ -108,10 +112,10 @@ function HomePage() {
             </div>
             <div className="branch">
               <p>Kakkanad, Ernakulam, Kerala
-                Parisudham Cotton Industries, C 5224, Kankarapady, Vadakod, Edapaly, Mundakamugal Road, Kakkanad, Ernakulam, Kerala, 682021
+                <br />Parisudham Cotton Industries, C 5224, Kankarapady, Vadakod, Edapaly, Mundakamugal Road, Kakkanad, Ernakulam, Kerala, 682021
               </p>
               <p>Thuravoor, Alappuzha, Kerala
-                Parisudham Cotton Industries, Tp/7/135 C, Fathima Foods Building, Thuravoor, Pattanakadu, Valamangalam Road, Thuravoor, Alappuzha, Kerala, 688532
+                <br />Parisudham Cotton Industries, Tp/7/135 C, Fathima Foods Building, Thuravoor, Alappuzha, Kerala, 688532
               </p>
             </div>
           </div>
