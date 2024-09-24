@@ -178,24 +178,24 @@
   .small-screen {
     display: block;
     position: absolute;
-    right: 20px;
+    right: 5px;
     top: 20px;
   }
 
   .MENU {
-    position: fixed; /* Make the menu fixed so it overlays the screen */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%; /* Cover full width of the screen */
     height: 100%; /* Cover full height of the screen */
-    background-color: rgba(0, 0, 0, 0.9); /* Dark transparent background */
+    background-color: rgba(0, 0, 0, 0.9); 
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure it appears above other content */
-    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    z-index: 1000; 
+    transition: opacity 0.5s ease-in-out; 
   }
 
   .MENU .overlay__close {

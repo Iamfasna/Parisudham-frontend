@@ -21,7 +21,7 @@ function HomePage() {
     AOS.init({
       duration: 3000,
       offset: 120,
-      once: true, // Ensures animation only happens once
+      once: true, 
     });
   }, []);
 
@@ -37,7 +37,7 @@ function HomePage() {
     <div className="main">
       <div className="navbar">
         <div className="logo">
-          <p>PARISUDHAM COTTON INDUSTRIES</p>
+          <p href="#home">PARISUDHAM COTTON INDUSTRIES</p>
         </div>
         <div className="navbar-menu">
           <button onClick={handleHomeClick}>HOME</button>
