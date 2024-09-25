@@ -53,8 +53,8 @@ function HomePage() {
          close
        </span>
        <ul className="links">
-         <li><a href="#home">Home</a></li>
-         <li><a href="#shop">Shop</a></li>
+         <li><a href="/">Home</a></li>
+         <li><a href="/shop">Shop</a></li>
        </ul>
      </div>
      
