@@ -128,7 +128,7 @@ function User() {
         <div className="navbar-menu">
         <button onClick={handleHomeClick}>HOME</button>
         <button onClick={handleShopClick}>SHOP</button>
-        <button>CONTACT</button>
+        
         </div>
         </div>
       <div className="inside">

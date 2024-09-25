@@ -12,10 +12,10 @@ function HomePage() {
   const navigate = useNavigate();
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleMenuClick = (sectionId) => {
-    setToggleMenu(false);
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-  };
+  // const handleMenuClick = (sectionId) => {
+  //   setToggleMenu(false);
+  //   document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  // };
 
   useEffect(() => {
     AOS.init({
@@ -42,7 +42,7 @@ function HomePage() {
         <div className="navbar-menu">
           <button onClick={handleHomeClick}>HOME</button>
           <button onClick={handleShopClick}>SHOP</button>
-          <button onClick={() => handleMenuClick('contact')}>CONTACT</button>
+          
         </div>
       </div>
       <div className="small-screen">
@@ -55,7 +55,6 @@ function HomePage() {
        <ul className="links">
          <li><a href="#home">Home</a></li>
          <li><a href="#shop">Shop</a></li>
-         <li><a href="#contact">Contact</a></li>
        </ul>
      </div>
      
@@ -116,6 +115,7 @@ function HomePage() {
               <p>Thuravoor, Alappuzha, Kerala
                 <br />Parisudham Cotton Industries, Tp/7/135 C, Fathima Foods Building, Thuravoor, Alappuzha, Kerala, 688532
               </p>
+              <p>Contact No: 9388629926 , 8301987359</p>
             </div>
           </div>
         </div>
