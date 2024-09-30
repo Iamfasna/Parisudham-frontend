@@ -216,30 +216,30 @@ body {
 
 @media screen and (max-width: 650px) {
   .navbar-menu {
-    flex-direction: column; /* Stacking navigation items vertically */
-    gap: 20px; /* Reducing gap for smaller screens */
+    flex-direction: column; 
+    gap: 20px;
   }
 
   .inside {
-    flex-direction: column; /* Stacking the main content on smaller screens */
+    flex-direction: column; 
   }
 
   .product {
-    width: 100%; /* Displaying one product per row on mobile */
-    margin: 10px 0; /* Reducing margin for smaller screens */
+    width: 100%; 
+    margin: 10px 0; 
   }
 
   .product img {
-    height: 150px; /* Adjusting image size for mobile */
+    height: 150px; 
   }
 
   .cart-item {
-    flex-direction: column; /* Stacking cart items vertically on mobile */
+    flex-direction: column; 
     align-items: flex-start;
   }
 
   .cart-item img {
-    width: 100px; /* Adjusting cart item image size */
+    width: 100px; 
     height: 100px;
   }
 }

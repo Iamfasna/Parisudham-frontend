@@ -1,11 +1,10 @@
-/* Main container styling */
+
 .main {
   display: block;
   background-color: #000;
   color: white;
 }
 
-/* Navbar styles */
 .navbar {
   color: white;
   display: flex;
@@ -37,7 +36,6 @@
   background-color: rgb(36, 35, 35);
 }
 
-/* Mobile screen navbar (Hamburger menu) */
 .small-screen {
   display: none;
 }
@@ -66,7 +64,7 @@
 }
 
 .overlay__close:hover {
-  color: #f1c40f; /* Optional: Change color when hovered */
+  color: #f1c40f; 
 }
 
 
@@ -84,25 +82,42 @@
   font-size: 24px;
 }
 
-/* First section styling */
+
 .first {
+  position: relative;
+  height: 100vh; /* Full viewport height */
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
+.image-div {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+  
+
 .image-div img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 75%;
+  object-fit: cover; 
 }
 
 .text-box {
+  position: relative;
+  z-index: 2; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 45px;
-  margin-left: 50px;
 }
 
-/* Product section styling */
 .product-div {
   margin-top: 50px;
 }
@@ -225,5 +240,25 @@
 
   .MENU .links a:hover {
     color: #f1c40f; /* Change color on hover */
+  }
+  .product-div {
+    display: block; /* Make the product section display as block */
+  }
+
+  .product-box {
+    display: flex;
+    flex-direction: column; /* Stack product items vertically */
+    align-items: center; /* Center align items */
+    width: 100%; /* Full width */
+    margin: 10px 0; /* Add some margin between items */
+  }
+
+  .product-item {
+    width: 90%; 
+    margin: 10px 0; 
+    box-shadow: none;
+  }
+  .about-p{
+
   }
 }
